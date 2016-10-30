@@ -1,5 +1,5 @@
 @extends('layout')
 
 @section('content')
-    <h1>Welcome {{$user->first_name}}</h1>
+    <h1>Welcome {{$user->full_name}}</h1>
 @stop

@@ -55,7 +55,7 @@ return [
         'mysql' => [
             'driver' => 'mysql',
             'host' => env('DB_HOST', '127.0.0.1'),
-            // 'host' => env('DB_HOST', 'localhost') . ('homestead' == gethostname() ? null: ':33060'),
+            // 'host' => env('DB_HOST', '127.0.0.1') . ('homestead' == gethostname() ? null: ':33060'),
             'port' => env('DB_PORT', '3306'),
             'database' => env('DB_DATABASE', 'codetouch'),
             'username' => env('DB_USERNAME', 'homestead'),
