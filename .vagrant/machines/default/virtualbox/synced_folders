@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/codetouch":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/codetouch","hostpath":"/Users/SaraNahal/Documents/codeTouch","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/SaraNahal/Documents/codeTouch","disabled":false,"__vagrantfile":true}}}
