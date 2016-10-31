@@ -17,7 +17,10 @@ Route::get('/', function () {
 
 Route::get('register', 'PagesController@showRegisterForm');
 Route::post('register', 'PagesController@register');
+Route::get('login', 'PagesController@showLoginForm');
+Route::post('login', 'PagesController@login');
 Route::get('google', 'PagesController@redirectToProvider');
 Route::get('googleRegistration', 'PagesController@googleRegistration');
-// Route::get('users', 'PagesController@showUsers');
+Route::get('users', 'PagesController@showUsers');
 Route::get('users/{user}', 'PagesController@showUser');
+Route::get('logout', 'PagesController@logout');

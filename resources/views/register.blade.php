@@ -1,8 +1,6 @@
 @extends('layout')
 
 @section('content')
-    <h1>Registration</h1>
-    <a href="{{url('login')}}">Login</a>
 
 	<div class="panel panel-default" id="registration_panel">
 		<div class="panel-heading">
@@ -11,7 +9,7 @@
 			</h3>
 		</div>
 		<div class="panel-body">
-		{{Form::open(array('action'=>'PagesController@register', 'method' => 'post', 'role'=>'form'))}}
+			{{Form::open(array('action'=>'PagesController@register', 'method' => 'post', 'role'=>'form'))}}
 			{{-- <form role="form" method="post"> --}}
 				<div class="row register_row">
 					<div class="col-lg-6">
@@ -34,9 +32,10 @@
 						<input type="password" name="confirm_password" class="form-control input-sm" placeholder="Confirm Password"/>
 					</div>
 				</div>
-				<input type="submit" value="Register" class="btn btn-info btn-block">
+				<input type="submit" value="Register" class="btn btn-info btn-block" id="register_btn">
 			{{-- </form> --}}
 			{{Form::close()}}
+			<a class="btn btn-success btn-block" href="{{url('google')}}">Register using Gmail Account</a>
 		</div>
 	</div>
 @stop

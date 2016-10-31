@@ -6,3 +6,7 @@
 .register_row{
 	margin-bottom: 10px;
 }
+
+#register_btn, #login_btn{
+	margin-bottom: 10px!important;
+}
