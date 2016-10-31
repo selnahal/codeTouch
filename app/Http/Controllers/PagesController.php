@@ -9,10 +9,11 @@ use Illuminate\Support\Facades\Redirect;
 use Illuminate\Auth\Authenticatable;
 use App\User;
 use App\Http\Requests;
-use DB;
-use Hash;
 use Socialite;
 use Auth;
+use DB;
+use Hash;
+
 
 class PagesController extends Controller
 {
@@ -34,7 +35,7 @@ class PagesController extends Controller
 
     public function register(){
     	$rules = array(
-	        'first_name'    => 'required', /
+	        'first_name'    => 'required', 
 	        'last_name'    => 'required', 
 	        'email'    => 'required|email', 
 	        'password' => 'required|alphaNum|min:3', 
