@@ -37,7 +37,7 @@ class PagesController extends Controller
     	$rules = array(
 	        'first_name'    => 'required', 
 	        'last_name'    => 'required', 
-	        'email'    => 'required|email', 
+	        'email'    => 'required|email|unique:users', 
 	        'password' => 'required|alphaNum|min:3', 
 	        'confirm_password' => 'required|alphaNum|min:3' 
 	    );
@@ -46,7 +46,7 @@ class PagesController extends Controller
     	if ($validator->fails()) {
         return Redirect::to('register')
             ->withErrors($validator) 
-            ->withInput(Input::except('password')); 
+            ->withInput(Input::except('password', 'confirm_password')); 
     	} else{
     		$user = new User;
 			$user->first_name = Input::get('first_name');

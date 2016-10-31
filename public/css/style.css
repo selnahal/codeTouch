@@ -7,6 +7,6 @@
 	margin-bottom: 10px;
 }
 
-#register_btn, #login_btn{
-	margin-bottom: 10px!important;
+#register_btn, #login_btn, #registration_panel{
+	margin-bottom: 10px !important;
 }
