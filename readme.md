@@ -1,12 +1,12 @@
 # Code Touch Test
 
-1) Before cloning make sure you have Vagrant V1.8.1
+* Before cloning make sure you have Vagrant V1.8.1
 
-2) Clone repository.
+* Clone repository.
 
-3) If you don't have a ssh key already, then open terminal and create one through (ssh-keygen -t rsa -C "your_email@example.com")
+* If you don't have a ssh key already, then open terminal and create one through (ssh-keygen -t rsa -C "your_email@example.com")
 
-4) In terminal run the following commands:
+* In terminal run the following commands:
 	
 	- cd /path/to/project
 
